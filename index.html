@@ -77,6 +77,16 @@
 	    fillOpacity: 0.8
 	  });
 	},
+	   
+        L.geoJson(rios, {
+          style: function (feature) {
+	    return {
+              fillColor: '#ff0000', 
+              color: '#fffafa'
+          };
+        },
+	      
+	      
 	      
 	onEachFeature: onEachFeature
       }).addTo(map);	    
