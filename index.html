@@ -38,6 +38,15 @@
         }
       }).addTo(map);
 	    
+      L.geoJson(rios, {
+        style: function (feature) {
+	  return {
+            color: '#0000ff',
+	    weight: 0.5
+          };
+        },
+	    
+	    
 	    
       function onEachFeature(feature, layer) {
 	var popupContent = "";
@@ -78,13 +87,7 @@
 	  });
 	},
 	   
-        L.geoJson(rios, {
-          style: function (feature) {
-	    return {
-              color: '#0000ff',
-	      weight:2
-          };
-        },
+        
 	      
 	      
 	      
