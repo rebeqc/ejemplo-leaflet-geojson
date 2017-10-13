@@ -47,12 +47,10 @@
         if (feature.properties && feature.properties.verbatimLo) {
 	  popupContent += "<br>" + feature.properties.verbatimLo;
 		}
-	      
-	      
+	       
 	layer.bindPopup(popupContent);
       }	    
-	    
-	    
+	        
       L.geoJson(regpresencia, {
         style: function (feature) {
 	  return {
